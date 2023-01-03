@@ -1,0 +1,29 @@
+{
+  "name": "symphony-native-window-handle-helper",
+  "version": "1.0.0",
+  "description": "Native window handle helpre for Symphony desktop app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run build",
+    "build": "run-script-os",
+    "build:win32": "rc.exe /nologo resources.rc & cl SymphonyNativeWindowHandleHelper.c resources.res /O2 /MT /nologo",
+    "build:darwin": ""
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finos/SymphonyWindowsHwndHelper.git"
+  },
+  "author": "symphony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finos/SymphonyWindowsHwndHelper/issues"
+  },
+  "homepage": "https://github.com/finos/SymphonyWindowsHwndHelper#readme",
+  "os": [
+    "win32"
+  ],
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
+  }
+}

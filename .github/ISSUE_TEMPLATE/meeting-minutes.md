@@ -1,7 +1,7 @@
 ---
-name: "\U0001F91D {project name} Meeting Minutes"
-about: To track {project name} meeting agenda and attendance
-title: DD MMM YYYY - {project name} Meeting Minutes
+name: "\U0001F91D Symphony Windows Hwnd Helper Meeting Minutes"
+about: To track Symphony Windows Hwnd Helper meeting agenda and attendance
+title: DD MMM YYYY - Symphony Windows Hwnd Helper Meeting Minutes
 labels: meeting
 assignees: 
 

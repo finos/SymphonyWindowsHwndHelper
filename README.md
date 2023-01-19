@@ -1,45 +1,28 @@
 [![FINOS - Incubating](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-incubating.svg)](https://community.finos.org/docs/governance/Software-Projects/stages/incubating)
 
-# Symphony Windows Hwnd Helper
+# Symphony Windows HWND Helper
 
-Short blurb about what your project does.
-
+When sharing a screen on Citrix with media optimization enabled with the SymphonyElectron app, the Symphony Windows HWND Helper will provide the right hnwd (HWND corresponding to main content  BrowserView) .
 ## Installation
 
-OS X & Linux:
+Windows with npm installed:
 
 ```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
+npm run build
+``````
 
 ## Usage example
 
-A few motivating and useful examples of how your project can be used. Spice this up with code blocks and potentially screenshots / videos ([LiceCap](https://www.cockos.com/licecap/) is great for this kind of thing).
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
+```
+SymphonyNativeWindowHandleHelper HWND
+```
+Returns the right BrowserView HWND
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+Ensure Visual Studio is installed.
 
-```sh
-make install
-npm test
-```
 
-## Roadmap
-
-List the roadmap steps; alternatively link the Confluence Wiki page where the project roadmap is published.
-
-1. Item 1
-2. Item 2
-3. ....
 
 ## Contributing
 For any questions, bugs or feature requests please open an [issue](https://github.com/finos/SymphonyWindowsHwndHelper/issues)

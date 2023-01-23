@@ -29,6 +29,8 @@ static HWND getMainContentNativeWindowHandle(HWND parentWindowHwnd) {
           GetWindowRect(childWindowHwnd, &titlebarRect);
           contentWindowHwnd = titlebarWindowHwnd;
           titlebarWindowHwnd = childWindowHwnd;
+        } else {
+          contentWindowHwnd = childWindowHwnd;
         }
       }
       childWindowHwnd = FindWindowExA(parentWindowHwnd, childWindowHwnd, "Chrome_RenderWidgetHostHWND", NULL);
@@ -36,10 +38,9 @@ static HWND getMainContentNativeWindowHandle(HWND parentWindowHwnd) {
     while(childWindowHwnd != NULL);
 		if( contentWindowHwnd == NULL ) {
 			return NULL;
-		} else if (contentWindowHwnd != titlebarWindowHwnd) {
+		} else {
       return contentWindowHwnd;
     }
-    return parentWindowHwnd;
 }
 
 int main( int argc, char* argv[] ) {
